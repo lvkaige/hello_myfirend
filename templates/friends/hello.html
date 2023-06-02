@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <h1>hello my old friends! :)</h1>
+<body style="background-image: url({% static 'hello/images/1.jpg' %});
+        background-size:100%;background-repeat:no-repeat;">
+
+    <h1>hello my old friend! :)</h1>
+    <h2>The other day I had an idea to travel to Singapore,</h2>
+    <h2> I asked you something about travel,</h2>
+    <h2>and you replied very kindly,</h2>
+    <h2>we talked a lot that night,which made me very happy</h2>
+<center>
+    <h1><a href="hello2/">Read more</a></h1>
+</center>
 </body>
 </html>
