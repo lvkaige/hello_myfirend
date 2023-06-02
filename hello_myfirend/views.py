@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
+
+from django import forms
+
+def index(request):
+    return render(request, "friends/index.html")
+
